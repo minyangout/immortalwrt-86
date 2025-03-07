@@ -207,10 +207,10 @@ if [ -s  "/tmp/cloud_ts_version" ]; then
 	cloud_kernel=`cat /tmp/cloud_ts_version | cut -d _ -f 2`
 	#固件下载地址
 	new_version=`cat /tmp/cloud_ts_version`
-	DEV_URL=https://github.com/Blueplanet20120/immortalwrt-86/releases/download/${new_version}/immortalwrt_x86-64-${new_version}_sta_Lenyu.img.gz
-	DEV_UEFI_URL=https://github.com/Blueplanet20120/immortalwrt-86/releases/download/${new_version}/immortalwrt_x86-64-${new_version}_uefi-gpt_sta_Lenyu.img.gz
-	immortalwrt_sta=https://github.com/Blueplanet20120/immortalwrt-86/releases/download/${new_version}/immortalwrt_sta.md5
-	immortalwrt_sta_uefi=https://github.com/Blueplanet20120immortalwrt-86/releases/download/${new_version}/immortalwrt_sta_uefi.md5
+	DEV_URL=https://github.com/minyangout/immortalwrt-86/releases/download/${new_version}/immortalwrt_x86-64-${new_version}_sta_Lenyu.img.gz
+	DEV_UEFI_URL=https://github.com/minyangout/immortalwrt-86/releases/download/${new_version}/immortalwrt_x86-64-${new_version}_uefi-gpt_sta_Lenyu.img.gz
+	immortalwrt_sta=https://github.com/minyangout/immortalwrt-86/releases/download/${new_version}/immortalwrt_sta.md5
+	immortalwrt_sta_uefi=https://github.com/minyangoutimmortalwrt-86/releases/download/${new_version}/immortalwrt_sta_uefi.md5
 else
 	echo "请检测网络或重试！"
 	exit 1
@@ -353,10 +353,10 @@ cloud_version=`cat /tmp/cloud_ts_version | cut -d _ -f 1`
 cloud_kernel=`cat /tmp/cloud_ts_version | cut -d _ -f 2`
 #固件下载地址
 new_version=`cat /tmp/cloud_ts_version` # 2208052057_5.4.203
-DEV_URL=https://github.com/Blueplanet20120/immortalwrt-86/releases/download/${new_version}/immortalwrt_x86-64-${new_version}_sta_Lenyu.img.gz
-DEV_UEFI_URL=https://github.com/Blueplanet20120/immortalwrt-86/releases/download/${new_version}/immortalwrt_x86-64-${new_version}_uefi-gpt_sta_Lenyu.img.gz
-immortalwrt_sta=https://github.com/Blueplanet20120/immortalwrt-86/releases/download/${new_version}/immortalwrt_sta.md5
-immortalwrt_sta_uefi=https://github.com/Blueplanet20120/immortalwrt-86/releases/download/${new_version}/immortalwrt_sta_uefi.md5
+DEV_URL=https://github.com/minyangout/immortalwrt-86/releases/download/${new_version}/immortalwrt_x86-64-${new_version}_sta_Lenyu.img.gz
+DEV_UEFI_URL=https://github.com/minyangout/immortalwrt-86/releases/download/${new_version}/immortalwrt_x86-64-${new_version}_uefi-gpt_sta_Lenyu.img.gz
+immortalwrt_sta=https://github.com/minyangout/immortalwrt-86/releases/download/${new_version}/immortalwrt_sta.md5
+immortalwrt_sta_uefi=https://github.com/minyangout/immortalwrt-86/releases/download/${new_version}/immortalwrt_sta_uefi.md5
 else
 echo "请检测网络或重试！"
 exit 1
